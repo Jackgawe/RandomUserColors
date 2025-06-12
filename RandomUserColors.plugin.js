@@ -5,12 +5,26 @@
  * @version 1.0.0
  */
 
-const config = require('./RandomUserColors.config.json');
-
 module.exports = class RandomUserColors {
     constructor() {
         this.colors = new Map();
-        this.settings = config.config;
+        this.settings = {
+            colorSettings: {
+                saturation: 70,
+                lightness: 60,
+                useCustomColors: false,
+                customColors: [
+                    "#FF0000",
+                    "#00FF00",
+                    "#0000FF",
+                    "#FFFF00",
+                    "#FF00FF",
+                    "#00FFFF"
+                ]
+            },
+            excludedUsers: [],
+            excludedChannels: []
+        };
     }
 
     start() {
