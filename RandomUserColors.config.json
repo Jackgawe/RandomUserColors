@@ -1,0 +1,45 @@
+{
+    "info": {
+        "name": "RandomUserColors",
+        "authors": [
+            {
+                "name": "eyadmkv",
+                "discord_id": "1080943463073329307",
+                "github_username": "jackgawe"
+            }
+        ],
+        "version": "1.0.0",
+        "description": "Assigns random colors to users in the chat",
+        "github": "https://github.com/jackgawe/RandomUserColors",
+        "github_raw": "https://raw.githubusercontent.com/jackgawe/RandomUserColors/main/RandomUserColors.plugin.js"
+    },
+    "changelog": [
+        {
+            "title": "Initial Release",
+            "type": "added",
+            "items": [
+                "Random color assignment for users",
+                "Persistent colors per user",
+                "Automatic color application for new messages"
+            ]
+        }
+    ],
+    "main": "RandomUserColors.plugin.js",
+    "config": {
+        "colorSettings": {
+            "saturation": 70,
+            "lightness": 60,
+            "useCustomColors": false,
+            "customColors": [
+                "#FF0000",
+                "#00FF00",
+                "#0000FF",
+                "#FFFF00",
+                "#FF00FF",
+                "#00FFFF"
+            ]
+        },
+        "excludedUsers": [],
+        "excludedChannels": []
+    }
+} 
